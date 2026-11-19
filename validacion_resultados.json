@@ -1,0 +1,159 @@
+{
+  "tables": {
+    "persona": 7,
+    "estudiante": 4,
+    "docente": 3,
+    "persona_telefono": 4,
+    "libro": 6,
+    "autor": 4,
+    "libro_autor": 8,
+    "coleccion": 3,
+    "libro_coleccion": 10,
+    "ejemplar": 8,
+    "prestamo": 6,
+    "incidencia": 3
+  },
+  "queries": [
+    {
+      "id": "Q01",
+      "title": "Libros publicados desde 2020",
+      "rows": 5,
+      "cols": [
+        "isbn",
+        "titulo"
+      ]
+    },
+    {
+      "id": "Q02",
+      "title": "Estudiantes de quinto semestre o superior",
+      "rows": 2,
+      "cols": [
+        "nombres",
+        "matricula"
+      ]
+    },
+    {
+      "id": "Q03",
+      "title": "Libros con sus autores",
+      "rows": 8,
+      "cols": [
+        "titulo",
+        "autor"
+      ]
+    },
+    {
+      "id": "Q04",
+      "title": "Ejemplares disponibles para prestar",
+      "rows": 4,
+      "cols": [
+        "id_ejemplar",
+        "codigo_inventario"
+      ]
+    },
+    {
+      "id": "Q05",
+      "title": "Libros que nunca se han prestado",
+      "rows": 1,
+      "cols": [
+        "titulo"
+      ]
+    },
+    {
+      "id": "Q06",
+      "title": "Libros de Ciencia o Literatura (union)",
+      "rows": 6,
+      "cols": [
+        "titulo"
+      ]
+    },
+    {
+      "id": "Q07",
+      "title": "Libros presentes en Ciencia y Literatura",
+      "rows": 1,
+      "cols": [
+        "titulo"
+      ]
+    },
+    {
+      "id": "Q08",
+      "title": "Division: libros en todas las colecciones exigidas",
+      "rows": 1,
+      "cols": [
+        "titulo"
+      ]
+    },
+    {
+      "id": "Q09",
+      "title": "Numero de ejemplares por libro (agrupacion)",
+      "rows": 6,
+      "cols": [
+        "titulo",
+        "total_ejemplares"
+      ]
+    },
+    {
+      "id": "Q10",
+      "title": "Prestamos activos con lector y titulo",
+      "rows": 3,
+      "cols": [
+        "id_prestamo",
+        "nombres",
+        "titulo"
+      ]
+    },
+    {
+      "id": "Q11",
+      "title": "Personas que no han solicitado prestamos",
+      "rows": 2,
+      "cols": [
+        "nombres",
+        "apellido_paterno"
+      ]
+    },
+    {
+      "id": "Q12",
+      "title": "Autores, incluso quienes no tienen libros",
+      "rows": 9,
+      "cols": [
+        "autor",
+        "titulo"
+      ]
+    },
+    {
+      "id": "Q13",
+      "title": "Prestamos e incidencias (reunion externa)",
+      "rows": 6,
+      "cols": [
+        "id_prestamo",
+        "incidencia"
+      ]
+    },
+    {
+      "id": "Q14",
+      "title": "Producto cartesiano de lectores y novedades",
+      "rows": 4,
+      "cols": [
+        "nombres",
+        "titulo"
+      ]
+    },
+    {
+      "id": "Q15",
+      "title": "Proyeccion generalizada: antiguedad en 2026",
+      "rows": 6,
+      "cols": [
+        "titulo",
+        "antiguedad"
+      ]
+    },
+    {
+      "id": "Q16",
+      "title": "Consulta compleja: titulos de Ciencia escritos por Ada desde 2020",
+      "rows": 3,
+      "cols": [
+        "titulo"
+      ]
+    }
+  ],
+  "data_kind": "synthetic independent validation with sqlite3 in-memory, not SQL Server execution"
+}

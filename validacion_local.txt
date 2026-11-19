@@ -1,0 +1,21 @@
+UNIDAD 5 | VALIDACION INDEPENDIENTE SQLITE
+Todas las consultas se ejecutaron en SQLite en memoria con datos ficticios. NO equivale a ejecutar SQL Server.
+
+Q01: 5 filas
+Q02: 2 filas
+Q03: 8 filas
+Q04: 4 filas
+Q05: 1 filas
+Q06: 6 filas
+Q07: 1 filas
+Q08: 1 filas
+Q09: 6 filas
+Q10: 3 filas
+Q11: 2 filas
+Q12: 9 filas
+Q13: 6 filas
+Q14: 4 filas
+Q15: 6 filas
+Q16: 3 filas
+
+Resultado: 16/16 consultas ejecutadas y comparadas con su ultima etapa intermedia.

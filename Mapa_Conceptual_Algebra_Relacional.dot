@@ -1,0 +1,12 @@
+digraph Algebra {
+ graph [rankdir=TB, bgcolor="white", pad="0.42", nodesep="0.36", ranksep="0.65", fontname="DejaVu Sans", label="MAPA CONCEPTUAL  ·  ALGEBRA RELACIONAL", fontsize=24, labelloc=t, fontcolor="#17344b"];
+ node [shape=box,style="rounded,filled", fontname="DejaVu Sans", fontsize=15, penwidth=1.6, margin="0.28,0.24"];
+ edge [color="#6d96ad", penwidth=1.7, arrowsize=0.8];
+ top [label="OPERADORES RELACIONALES\nEntran una o dos relaciones y sale una relación (cierre algebraico)\nSirven para consultar, combinar y transformar datos", fillcolor="#14364d",fontcolor="white",color="#14364d",width=8.8,fontsize=20];
+ un [label="UNARIOS · una relación\n\nσ  SELECCIÓN: filtra filas\nπ  PROYECCIÓN: elige atributos\nρ  RENOMBRAMIENTO: cambia nombres\n\nEjemplos:\nLibros desde 2020; títulos registrados", fillcolor="#e8f5ef",color="#9bcfbd",width=4.7,height=3.0];
+ bi [label="BINARIOS · dos relaciones\n\n×  PRODUCTO: combinaciones\n∪  UNIÓN: cualquiera de dos conjuntos\n∩  INTERSECCIÓN: ambos conjuntos\n−  DIFERENCIA: solo el primero\n⋈  JOIN: combina por condición\n÷  DIVISIÓN: condición para todos\n\nUnión, intersección y diferencia:\nrequieren esquemas compatibles", fillcolor="#eaf2fc",color="#9dbddd",width=4.7,height=3.0];
+ ex [label="EXTENDIDOS · más expresividad\n\nπ  PROYECCIÓN GENERALIZADA:\n    produce atributos calculados\nγ  AGRUPACIÓN: COUNT, SUM, AVG\n⟕  OUTER JOIN IZQUIERDO\n⟖  OUTER JOIN DERECHO\n⟗  OUTER JOIN COMPLETO\n\nConservan filas sin coincidencia;\npueden introducir NULL", fillcolor="#fff4e2",color="#e1c592",width=4.7,height=3.0];
+ note [label="REGLAS IMPORTANTES\nEl álgebra clásica trabaja con conjuntos (sin duplicados).\nEn SQL, SELECT normalmente admite duplicados; usar DISTINCT cuando corresponda.\nUna combinación de operadores genera consultas complejas y verificables.", fillcolor="#f3f5f8",color="#cad2d8",fontsize=14, width=13.5];
+ top -> {un bi ex}; {rank=same;un;bi;ex};
+ un -> note [color="#9bcfbd"]; bi -> note [color="#9dbddd"]; ex -> note [color="#e1c592"];
+}
